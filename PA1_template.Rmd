@@ -184,7 +184,7 @@ str(weekday_steps_by_interval)
 head(weekday_steps_by_interval)
 
 
-# Plot for the average of total number of steps by interval and day type 
+# Plot for the average of total number of steps by interval and day type (Weekday or Weekend) 
 ggplot(weekday_steps_by_interval, aes(x=interval, y=Steps,color=daytype)) +  
 geom_line() +
 facet_grid(daytype ~.) + 
